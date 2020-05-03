@@ -8,6 +8,9 @@ print(env.observation_space.low)
 print(env.action_space.n)
 
 DISCRETE_OS_SIZE=[20] * len(env.observation_space.high)
+discrete_os_win_size=(env.observation_space.high-env.observation_space.low)/DISCRETE_OS_SIZE
+
+print()
 
 done= False
 
